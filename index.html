@@ -7,6 +7,11 @@
     <title>Fake news detection</title>
     <link rel="stylesheet" href="styles.css" />
 
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
     <!-- bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -21,21 +26,23 @@
     ></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
       <div class="container-fluid">
         <button
           class="navbar-toggler"
+          id="menu-button"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
-          aria-label="Toggle navigation"
+          aria-label="Toggle navigation" 
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <button onClick="func()" id="close" class="hide ms-auto bg-light me-2">X</button>
             <li class="nav-item mx-3 my-1">
               <a class="nav-link active" href="#home">Home</a>
             </li>
@@ -62,7 +69,7 @@
       </div>
     </nav>
 
-    <section id="home">
+    <section id="home" class="bg-dark text-white">
       <h1 class="main-heading">
         FIRST INTERNATIONAL CONFERENCE ON SPEECH AND LANGUAGE TECHNOLOGIES FOR
         LOW-RESOURCE LANGUAGES SPELLL (2022 - 2023)
@@ -150,21 +157,21 @@
         </div>
         <div class="paper-content">
           <p>
-            -We invite researchers and practitioners to submit papers reporting
+            - We invite researchers and practitioners to submit papers reporting
             on fake news detection and datasets to avoid the issues in fake news
             detection.
           </p>
           <p>
-            -We also encourage qualitative studies related to the issues and how
+            - We also encourage qualitative studies related to the issues and how
             to avoid them
           </p>
           <p>
-            -Regional-fake 2022 welcomes theoretical and practical paper
+            - Regional-fake 2022 welcomes theoretical and practical paper
             submissions on any Ir languages that contribute to research in
             identifying trust, fakenen and reliability
           </p>
           <p>
-            -We particularly encourage studies that address either practical
+            - We particularly encourage studies that address either practical
             application or improving resources
           </p>
         </div>
@@ -442,12 +449,12 @@
               <div class="card mb-3">
                 <div class="row g-0">
                   <div class="col-lg-3">                    
-                    <img class="img-fluid" src="avatar.jpg" alt="avatar">
+                    <i class="fa-regular fa-circle-user"></i>
                   </div>
                   <div class="col-lg-9">
                     <div class="card-body">
                       <p class="card-text"> 
-                        1. Malliga Subramanian, Kongu Engineering College, India
+                         Malliga Subramanian, Kongu Engineering College, India
                       </p>
                     </div>
                   </div>
@@ -458,12 +465,13 @@
               <div class="card mb-3">
                 <div class="row g-0">
                   <div class="col-lg-3">
-                    <img class="img-fluid" src="avatar.jpg" alt="avatar">
+                   
+                    <i class="fa-regular fa-circle-user"></i>
                   </div>
                   <div class="col-lg-9">
                     <div class="card-body">
                       <p class="card-text">
-                        2. S. Angel Deborah, Sri Sivasubramaniya Nadar College of
+                        S. Angel Deborah, Sri Sivasubramaniya Nadar College of
             Engineering, India
                       </p>
                     </div>
@@ -475,12 +483,13 @@
               <div class="card mb-3">
                 <div class="row g-0">
                   <div class="col-lg-3">
-                    <img class="img-fluid" src="avatar.jpg" alt="avatar">
+                   
+                    <i class="fa-regular fa-circle-user"></i>
                   </div>
                   <div class="col-lg-9">
                     <div class="card-body">
                       <p class="card-text">
-                        3. Kogilavani Shanmugavadivel, Kongu Engineering College, India
+                        Kogilavani Shanmugavadivel, Kongu Engineering College, India
                       </p>
                     </div>
                   </div>
@@ -491,13 +500,13 @@
               <div class="card mb-3">
                 <div class="row g-0">
                   <div class="col-lg-3">
-                    <img class="img-fluid" src="avatar.jpg" alt="avatar">
+                   
+                    <i class="fa-regular fa-circle-user"></i>
                   </div>
                   <div class="col-lg-9">
                     <div class="card-body">
                       <p class="card-text">
-                        4. S. Rajalakshmi, Sri Sivasubramaniya Nadar College of Engineering,
-            India
+                        Dhivya Chinnapa, Thomson Reuters, USA
                       </p>
                     </div>
                   </div>
@@ -509,12 +518,13 @@
               <div class="card mb-3">
                 <div class="row g-0">
                   <div class="col-lg-3">
-                    <img class="img-fluid" src="avatar.jpg" alt="avatar">
+                   
+                    <i class="fa-regular fa-circle-user"></i>
                   </div>
                   <div class="col-lg-9">
                     <div class="card-body">
                       <p class="card-text">
-                        5. T. T. Mirnalinee, Sri Sivasubaramaniya Nadar College of
+                         T. T. Mirnalinee, Sri Sivasubaramaniya Nadar College of
             Engineering, India
                       </p>
                     </div>
@@ -526,12 +536,13 @@
               <div class="card mb-3">
                 <div class="row g-0">
                   <div class="col-lg-3">
-                    <img class="img-fluid" src="avatar.jpg" alt="avatar">
+                   
+                    <i class="fa-regular fa-circle-user"></i>
                   </div>
                   <div class="col-lg-9">
                     <div class="card-body">
                       <p class="card-text">
-                        6. Gyorgy Kovacs, Lulea University of Technology, Lulea, Sweden
+                         Gyorgy Kovacs, Lulea University of Technology, Lulea, Sweden
                       </p>
                     </div>
                   </div>
@@ -542,12 +553,13 @@
               <div class="card mb-3">
                 <div class="row g-0">
                   <div class="col-lg-3">
-                    <img class="img-fluid" src="avatar.jpg" alt="avatar">
+                   
+                    <i class="fa-regular fa-circle-user"></i>
                   </div>
                   <div class="col-lg-9">
                     <div class="card-body">
                       <p class="card-text">
-                        7. Dhivya Chinnapa, Thomson Reuters, USA
+                         S. Rajalakshmi, Sri Sivasubramaniya Nadar College of Engineering, India
                       </p>
                     </div>
                   </div>
@@ -559,7 +571,7 @@
       </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="bg-dark text-white">
       <div class="container-fluid">
         <h1>WORKSHOP CONTACT</h1>
 
@@ -569,21 +581,21 @@
           <div class="card">
             <div class="card-body">
               <a href="mailto:mallisenthil.cse@kongu.edu">
-                <p class="card-text">mallisenthil.cse@kongu.edu</p>
+                <p class="card-text"><i class="fa-regular fa-envelope"></i>mallisenthil.cse@kongu.edu</p>
               </a>
             </div>
           </div>
           <div class="card">
             <div class="card-body">
               <a href="mailto:angeldeborahs@ssn.edu.in">
-                <p class="card-text">angeldeborahs@ssn.edu.in</p>
+                <p class="card-text"><i class="fa-regular fa-envelope"></i>angeldeborahs@ssn.edu.in</p>
               </a>
             </div>
           </div>
           <div class="card">
             <div class="card-body">
               <a href="mailto:kogilavani.cse@kongu.edu">
-                <p class="card-text">kogilavani.cse@kongu.edu</p>
+                <p class="card-text"><i class="fa-regular fa-envelope"></i>kogilavani.cse@kongu.edu</p>
               </a>
             </div>
           </div>
@@ -591,13 +603,32 @@
       </div>
     </section>
 
-    <script>
+    <script> 
+      function func(){
+        $(".navbar .collapse").collapse("hide");
+      }
+      if(screen.width<1000){
+        $(".navbar").addClass("bg-dark");
+        $("#close").removeClass("hide");
+        $("#close").addClass("show");
+      }
       var menuelements = document.getElementsByClassName("nav-link");
       for (var i = 0; i < menuelements.length; i++) {
         menuelements[i].addEventListener("click", () => {
           $(".navbar .collapse").collapse("hide");
         });
       }
+      $(window).on("scroll",()=>{
+        var scroll = $(window).scrollTop(); 
+        if (scroll >= screen.height) {
+          $(".navbar").addClass("bg-dark");
+        } else if(screen.width<1000){
+          $(".navbar").addClass("bg-dark");
+        }else{
+          $(".navbar").removeClass("bg-dark");
+        }
+      });
+      
     </script>
     <!-- jquery  -->
     <script
