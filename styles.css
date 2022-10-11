@@ -1,0 +1,65 @@
+section{
+    height:100vh;
+    border: 5px solid black;
+    padding:5%;
+}
+
+/* home */
+
+#home{
+    background-position: center; 
+    padding:18%;
+    text-align: center;
+}
+
+.main-heading{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.sub-heading{
+    font-size:1.5rem;
+    padding:5%;
+}
+
+/* objectives */
+
+.theme{
+    margin:5% auto;
+}
+
+#objectives .card-title{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#objectives .card-text{
+    font-size: 1.2rem;
+    text-align: center;
+}
+.objective .card{ 
+    margin: 5%;
+    height: 87%;
+}
+
+/* committee */
+
+#committee h1{
+    font-size:2rem;
+    text-align: center;
+    padding:1%;
+}
+
+.carousel-inner{
+    height:75vh;
+}
+
+.carousel-item{ 
+    padding:5% 12%;
+    font-size:1.5rem;
+}
+
+.carousel-item .card{
+    margin:10% auto;
+    height:50vh;
+}
