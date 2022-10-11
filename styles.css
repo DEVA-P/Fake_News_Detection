@@ -2,17 +2,30 @@ section {
   padding: 5%;
 }
 
+.bg-custom {
+  background-color: black;
+}
+
+#objectives,
+#dates,
+#organiser {
+  background-color: #f1e4ed;
+}
+
+#papers,
+#committee,
+#contact {
+  background-color: #790252;
+}
 
 /* home */
 
 #home {
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.8),
-        rgba(0, 0, 0, 0.8)
-    ),url("home.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   padding: 18%;
   text-align: center;
 }
@@ -30,7 +43,7 @@ section {
 /* papers */
 
 .cfp {
-  background-color: rgb(234, 234, 234);
+  background-color: #f1e4ed;
   padding: 3%;
   margin: 3%;
 }
@@ -53,7 +66,17 @@ section {
 /* objectives */
 
 .theme {
-  margin: 5% auto;
+  margin: 3% auto;
+}
+
+.theme .card-body {
+  padding: 3%;
+}
+
+.theme .card-header,
+.objective .card-header {
+  background-color: #790252;
+  color: white;
 }
 
 #objectives .card-title,
@@ -69,6 +92,7 @@ section {
 .objective .card {
   margin: 5%;
   height: 87%;
+  background-color: #f1e4ed;
 }
 
 /* committee */
@@ -76,7 +100,7 @@ section {
 #committee h1 {
   font-size: 2rem;
   text-align: center;
-  padding: 1%;
+  padding: 2%;
 }
 
 .carousel-item {
@@ -86,10 +110,12 @@ section {
 
 .carousel-item .card {
   margin: 10% auto;
-  min-height: 300px;
+  min-height: 290px;
+  border: 2px solid #790252;
 }
 .carousel-item .card .card-body {
   text-align: center;
+  background-color: #f1e4ed;
   display: flex;
   align-items: center;
 }
@@ -99,11 +125,11 @@ section {
 #dates h1 {
   font-size: 2rem;
   text-align: center;
-  padding: 1%;
+  padding: 3%;
 }
 
 .timeline {
-  border-left: 3px solid #727cf5;
+  border-left: 3px solid #790252;
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;
   background: rgba(114, 124, 245, 0.09);
@@ -168,7 +194,7 @@ section {
   content: attr(data-date);
   text-align: right;
   font-weight: 100;
-  font-size: 0.9em;
+  font-size: 1rem;
   min-width: 120px;
 }
 
@@ -180,8 +206,8 @@ section {
 }
 
 .timeline .event:after {
-  -webkit-box-shadow: 0 0 0 3px #727cf5;
-  box-shadow: 0 0 0 3px #727cf5;
+  -webkit-box-shadow: 0 0 0 3px #790252;
+  box-shadow: 0 0 0 7px #790252;
   left: -55.8px;
   background: #fff;
   border-radius: 50%;
@@ -204,7 +230,7 @@ section {
   border-top-right-radius: 0;
   border-bottom-left-radius: 4px;
   border-top-left-radius: 4px;
-  border-right: 3px solid #727cf5;
+  border-right: 3px solid #790252;
 }
 
 .rtl .timeline .event::before {
@@ -219,8 +245,13 @@ section {
 
 /* organisers */
 
-.organiser-head {
+#organiser {
   padding: 2%;
+  margin: 0;
+}
+
+.organiser-head {
+  padding: 0 0 5%;
 }
 
 .organiser-content {
@@ -230,30 +261,36 @@ section {
   text-align: center;
 }
 
-.organiser-content i{
-    font-size:3rem;
-    padding:10px;
+.organiser-content i {
+  font-size: 3rem;
+  padding: 10px;
 }
 
-.organiser-content .col-lg-3{
-    display:flex;
-    align-items: center;
-    justify-content: center; 
-    
+.organiser-content .card {
+  background-color: #790252;
+  color: white;
 }
-.organiser-content .col-lg-9{
-    display:flex;
-    align-items: center;
-    justify-content: center; 
-    height:110px;
+
+.organiser-content .col-lg-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.organiser-content .col-lg-9 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  height: 120px;
 }
 
 /* contact  */
 
-#contact  .card-body, #contact a {
-    display:flex;
-    justify-content:center;
-    align-items:center;
+#contact .card-body,
+#contact a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #contact h1 {
   font-size: 2rem;
@@ -263,23 +300,23 @@ section {
 #contact a {
   text-decoration: none;
   color: black;
-  font-size:1.2rem;
+  font-size: 1.2rem;
 }
 
-#contact i{
-    font-size: 1.5rem;
-    color:rgb(197, 95, 95);
-    padding-right:15px;
-    font-weight: 700;
-    font-size:1.5rem; 
+#contact i {
+  font-size: 1.5rem;
+  color: rgb(197, 95, 95);
+  padding-right: 15px;
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 
 /* extra */
 
-.hide{
-  display:none;
+.hide {
+  display: none;
 }
 
-.show{
-  display:block;
+.show {
+  display: block;
 }
