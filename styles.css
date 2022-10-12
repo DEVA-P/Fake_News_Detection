@@ -22,7 +22,7 @@ section {
 
 #home {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("home.jpg");
+    url('home.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -43,9 +43,12 @@ section {
 /* papers */
 
 .cfp {
-  background-color: #f1e4ed;
+  background-color: white;
   padding: 3%;
   margin: 3%;
+}
+.cfp .paper-content {
+  background-color: #f1e4ed;
 }
 .cfp h6 {
   font-size: 1rem;
@@ -213,7 +216,7 @@ section {
   border-radius: 50%;
   height: 9px;
   width: 9px;
-  content: "";
+  content: '';
   top: 5px;
 }
 
